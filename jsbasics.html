@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function msg(){
+            alert("Welcome to JS in the head tag");
+
+        }
+
+    </script>
+    <script type="text/javascript" src="external.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        function msg1(){
+            alert("Welcome to JS in the Body Tag");
+        }
+    </script>
+    <input type="button" value="Click head tag" onclick="msg()"/>
+    <input type="button" value="Click Body Tag" onclick="msg1()"/>
+    <input type="button" value="Click External JS" onclick="msg2()"/>
+    <!--Display the output in four ways-->
+    <!--Inner HTML-->
+    <p id="info">Hi</p>
+    <script>
+        document.getElementById("info").innerHTML="I am a Message to inner HTML";
+        
+    </script>
+    <script>
+        document.write("I am a mesaage through document.write");
+
+    </script>
+    <script>
+        window.alert("I am a message through window.alert");
+
+    </script>
+    <script>
+        console.log("I am a message console");
+    </script>
+    <script>
+        var empid=100;
+        var empname="john";
+        var empmobile=[3456,7876];
+        var empstatus=true;
+        document.write(empname+"s"+"id is"+empid+"<br>");
+        document.write("Primary Number"+empmobile[0]+)
+    </script>
+</body>
+</html>
