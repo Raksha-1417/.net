@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a Number</title>
+</head>
+<body>
+    <script>
+        var num = 1234,rem;
+        var rev = 0;
+        var sum=0;
+        while(num!=0){
+            rev=rev*10;
+            rem = num%10;
+            rev = rev + rem;
+            num = parseInt(num/10);
+            sum = sum+rem;
+
+        }
+        document.write("Reverse Number " + rev + "<br>");
+        document.write("Sum of a number " + sum + "<br>")
+    </script>
+    
+</body>
+</html>

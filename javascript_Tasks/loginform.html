@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+#main {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #3a3a3a;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px white;
+} 
+
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  height: 40px;
+  width:150px ;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(18, 17, 17);
+  font-weight: bold;
+  background-color: #f4f0f0;
+  cursor: pointer;
+  outline: none;
+}
+h1{
+    color: white;
+}
+  </style> 
+  
+  
+</head>
+
+<body>
+  <main id="main">
+    <h1 id="login">Login</h1>
+    
+    
+    
+    <form id="login-form" onsubmit="callvalue()">
+      <input type="text" name="username" id="username" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit" >
+    </form>
+  
+  </main>
+  <script>
+    function callvalue(){
+        var name= document.getElementById("username").value;
+        var pass= document.getElementById("password").value;
+        document.writeln("Your Login Details " + "<br>" + " Your Username " + name + "<br>");
+        document.writeln(" Your Password " + pass + "<br>")
+
+    }
+  </script>
+</body>
+
+</html>

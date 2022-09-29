@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject</title>
+</head>
+<body>
+    <script>
+        var s1=prompt("Enter the Mark of Subject 1");
+        var s2=prompt("Enter the Mark of Subject 2");
+        var s3=prompt("Enter the Mark of Subject 3");
+        var s4=prompt("Enter the Mark of Subject 4");
+        var s5=prompt("Enter the Mark of Subject 5");
+        var total=Number(s1)+Number(s2)+Number(s3)+Number(s4)+Number(s5);
+        var avg=Number(total)/5;
+        var per=Number(total)*100/500;
+        document.write("Total Marks " + total+"<br>");
+        document.write("Percentage " + per+"<br>");
+        document.write("<hr>");
+        if(per > 80){
+            document.write("The Grade is : " +"A" + "<br>");
+
+        }
+        else if(per <= 80 && per>60)
+        {
+            document.write("The Grade is : " +"B" + "<br>");
+
+        }
+        else if ( per<=60 && per>45)
+        {
+            document.write("The Grade is : " +"B" + "<br>");
+
+        }
+        else{
+            document.write("Fail");
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

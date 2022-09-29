@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap  numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a=3,b=8,temp;
+        document.write("Swapping using Third Variable"+"<br>");
+        document.write("before Swap " + "<br>" + "Value of a is " + a + "<br>" + "Value of b is " + b + "<br>");
+        temp=a;
+        a=b;
+        b=temp;
+        document.write("After Swap " + "<br>" + "Value of a is " + a + "<br>" + "Value of b is " + b + "<br>");
+        document.write("-------------------------------------------------------"+"<br>");
+
+    </script>
+    <script>
+        var a = 67;
+        var b = 7;
+        document.write("Swapping Without using Third Variable"+"<br>");
+        
+        document.write("Before Swap"+"<br>"+"Value of a is "+a+"<br>"+"Value of b is"+b+"<br>");
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        document.write("After Swapping value of a is "+ a +"<br>"+"b is "+b);
+        document.write("-------------------------------------------------------"+"<br>");
+    </script>
+    <script>
+        var a=33,b=6;
+        document.write("Swapping using Oneline Expression"+"<br>");
+        [a,b] = [b,a]
+        document.write("a: " + a + " b: " + b);
+
+    </script>
+    
+</body>
+</html>

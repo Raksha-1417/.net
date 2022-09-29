@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #283b62;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Continental Foods</h1>
+  <p>Different Foods with Different Taste</p>
+  <p>Continental food encompasses delicacies found in European countries. Indian and Chinese cuisines are essentially not a part of continental platter rather it consists of French and Mediterranean food.
+    
+    At times, people tend to mix up Oriental food and Continental food. Both of them are different from each other. Oriental food covers the South Asian region and comparatively uses more vegetables than Continental food.</p>
+</div>
+
+<h2 style="text-align:center">Different Foods</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pudding.jpg" alt="Jane" style="height:10%; width: 100%;">
+      <div class="container">
+        <h2>Sticky Toffee Pudding Recipe</h2>
+        <p class="title">Pudding</p>
+        <p>A rich, moist cake dipped in a sticky sauce. It is best served warm with a dollop of vanilla ice cream.</p>
+        
+        <p><button class="button">How to make</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="panner.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Paneer Streak</h2>
+        <p class="title">Paneer Dish</p>
+        <p>In the Continental food list, we are giving a pinch of India via Paneer Steak. So here is the Paneer Steak that's what we all Indian love, but it is baked with cheese and tomatoes to give a continental touch. It can also get served with mustard sauce, Strawberry Sauce, and more. 
+
+            It takes hardly 25 mins if you want to cook this delicious food. </p>
+        
+        <p><button class="button">How to make </button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Macaroni.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Macroni</h2>
+        <p class="title">Pasta Dish</p>
+        <p>It is a popular dish in North America and is often cooked with elbow macaroni. 
+            The same dish, known simply as macaroni cheese, is also found in Great Britain. We have given an Indian twist to macaroni as well.</p>
+ 
+        <p><button class="button">How to make</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

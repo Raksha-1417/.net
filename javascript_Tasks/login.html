@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var name= document.getElementById("username").value;
+            var pass= document.getElementById("password").value;
+            document.writeln("Your Login Details " + "<br>" + " Your Username " + name + "<br>");
+            document.writeln(" Your Password " + pass + "<br>")
+    
+        }
+</script>    
+</head>
+<body>
+    <form onsubmit="validate()">
+        <h1> Login </h1>
+        <input type="text"  placeholder="Username" id="username"><br>
+        <input type="text" placeholder="Password" id ="password"><br>
+        <input type = "submit" value="Login">
+    </form>
+    
+</body>
+</html>

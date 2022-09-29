@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var salary= prompt("Enter your salary");
+        var msg= alert("Enter number for your category\n IT - 1\n Testing - 2\n Admin -3\n ");
+        var department=prompt("Enter the department");
+       
+        if ( department == 1){
+            var bonus= (salary * 50)/100;
+          
+           
+
+        }
+        else if(department== 2){
+            bonus = (salary* 45)/100;
+            
+        }
+        else if(department== 3){
+            bonus = (salary * 30)/100;
+          
+        }
+        else{
+            bonus = (salary* 25)/100;
+           
+        }
+    
+        document.write("Your Previous Salary is " + salary+"<br>");
+        document.write("Your Bonus Amount is " + bonus+"<br>");
+       
+        var total = Number(salary) + Number(bonus);
+        document.write("Your Total Salary " + total+"<br>")
+       
+
+    </script>
+    
+    
+</body>
+</html>

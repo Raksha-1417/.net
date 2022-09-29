@@ -27,14 +27,14 @@
         }
         .left{
             width:20%;
-            height:600px;
+            height:1700px;
             background-color: #121227;
             border:2px solid rgb(227, 205, 225);
             float:left;
         }
         .center{
             width: 60%;
-            height:600px;
+            height:1700px;
             
             border:2px solid rgb(220, 220, 232);
             float:left;
@@ -64,11 +64,12 @@
         }
         
         #active{
-            background-color: rgb(212, 245, 129);
+            background-color: rgb(186, 223, 247);
+            color:black;
         }
         .right{
             width: 20%;
-            height:1000px;
+            height:1700px;
             background-color:rgb(14, 14, 54);
             border:2px solid rgb(4, 63, 25);
             float:left;
@@ -105,7 +106,7 @@
    
             margin-left: 10px;
             margin-top: 40px;
-            height: 500px;
+            height: 1000px;
             line-height: 40px;
             }
             .vitem{
@@ -117,21 +118,108 @@
 .vmove{
     position: relative;
 }
-@keyframes ticker{
-    0%{bottom: 0;}
-    30%{bottom:30px;}
-    60%{bottom: 150px}
-    90%{bottom: 190px}
-    110%{bottom: 230px;}
-    130%{bottom: 0;}
-
-
+.footer{
+            text-align: center;
+            background-color:rgb(212, 212, 247) ;
+            list-style: none;
+          
+            color:rgb(12, 12, 11);
+            padding: 20px;
+        }
+@media screen and (max-width: 650px) {
+  .left {
+    width: 100%;
+    display: block;
+  }
 }
-.vmove{
-    animation: ticker linear 10s infinite;
-}
+@media screen and (max-width:1000px)
+        {
+            iframe{
+                height:220px;
+                width:220px;
+            }
+            li a.verticalnav{
+            display:block;
+            color:rgb(246, 237, 246);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        li a.verticalnav:hover{
+            background-color: rgb(3, 3, 80);
+            width: auto;
+        }
         
-        
+        #active{
+            background-color: rgb(186, 223, 247);
+            color:black;
+            width: auto;
+        }
+        p{
+            font-size: 12px;
+        }
+        img{
+            display: none;
+        }
+        .ul_media{
+            display:none;
+        }
+        }
+        @media screen and (max-width:800px)
+        {
+            iframe{
+                height:100px;
+                width:100px;
+            }
+            li a.verticalnav{
+            display:block;
+            color:rgb(240, 241, 240);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .media{
+            display:none;
+        }
+        img{
+            display: none;
+        }
+        .ul_media{
+            display:none;
+        }
+        }
+        @media screen and (max-width:600px)
+        {
+            iframe{
+                height:50px;
+                width:50px;
+            }
+            li a.verticalnav{
+            display:block;
+            color:rgb(236, 228, 228);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 8px;
+        }
+        p{
+            font-size: 8px;
+        }
+        .media{
+            display:none;
+        }
+        img{
+            display: none;
+        }
+        .ul_media{
+            display:none;
+        }
+        } 
     </style>
 </head>
 <body>
@@ -149,18 +237,14 @@
         <div>
             <div class="left"> 
                 <ul class="vertical">
-                    <li><a id="active" class="verticalnav" href="index.html" target="_blank">Cuisine Over World</a></li>
+                    <li><a id="active" class="verticalnav" href="float.html" target="_blank">Cuisine Over World</a></li>
                     <li><a class="verticalnav" href="favourites.html" target="_blank">Your Favourites</a></li>
+                    <li><a class="verticalnav" href="continental _food.html" target="_blank">Continental Food</a></li>
                     <li><a class="verticalnav">Cuisine Types</a></li>
-                    <li><a class="verticalnav" href="selectors.html" target="_blank">Continental Food</a></li>
-                    <li><a class="verticalnav">Famous Indian Dishes</a></li>
-                    <li><a class="verticalnav">Famous USA Dishes</a></li>
-                    <li><a class="verticalnav">Famous European Dishes</a></li>
-                    <li><a class="verticalnav">Thai Dishes</a></li>
-                    <li><a class="verticalnav">Korean Dishes</a></li>
-                    <li><a class="verticalnav">China Dishes</a></li>
-                    <li><a class="verticalnav">Japan Dishes</a></li>
+                    <img src="Pizza-logo.png" style="width:80%" >
+                    
                 </ul>
+           
             </div>
             <div class="center">
                 <h2>Food variety is important for our health – but the definition of a ‘balanced diet’ is often murky</h2>
@@ -182,38 +266,48 @@
                 </div>
                     
                 
-                <p>It’s well known that a healthy diet can help reduce disease risks that are related to overweight or obesity – such as some cancers, cardiovascular disease and diabetes. As part of a healthy diet, experts around the world advise people to consume a variety of foods. In the UK for example, the NHS’s Eatwell Guide divides foods into food groups (starchy carbohydrates, fruit and veg, dairy or dairy alternatives, proteins, and fats). To get a “balanced diet”, the guide advises people to aim to eat a certain amount of food from each food group.
+                <p style="font-size:25px ;">It’s well known that a healthy diet can help reduce disease risks that are related to overweight or obesity – such as some cancers, cardiovascular disease and diabetes. As part of a healthy diet, experts around the world advise people to consume a variety of foods. In the UK for example, the NHS’s Eatwell Guide divides foods into food groups (starchy carbohydrates, fruit and veg, dairy or dairy alternatives, proteins, and fats). To get a “balanced diet”, the guide advises people to aim to eat a certain amount of food from each food group.
 
-                    One reason food variety is included in recommendations is because different foods have different nutrients. Eating a varied diet can benefit our health by reducing risks associated with malnutrition, which happens when we don’t get the right amount of nutrients from our diet. Malnutrition can cause weak muscles, decrease mobility, increase illness, and lead to breathing problems, among other symptoms.
+                    One reason food variety is included in recommendations is because different foods have different nutrients. </p>
+                    <p style="font-size:25px ;">Eating a varied diet can benefit our health by reducing risks associated with malnutrition, which happens when we don’t get the right amount of nutrients from our diet. Malnutrition can cause weak muscles, decrease mobility, increase illness, and lead to breathing problems, among other symptoms.
                     
-                    But what’s defined as “variety” by dietary guidelines can often be confusing and too simplistic – and vastly different from what the general public may define as variety. Research has shown that in addition to having variety as part of the whole diet, we can measure variety within meals (for example, having multiple courses, or foods from different food groups on our plate) as well as across meals (such as having different foods for lunch each day).
-                    
-                    Importantly, research has also found that variety can refer to foods that differ in their characteristics (such as their appearance, flavour, texture or smell), as well as the nutrients found in them. By this definition, eating a chocolate cake and strawberry cake would be a form of variety, as they differ in flavour, despite having a very similar nutritional profile and belonging to the same food group. It also means that single foods and dishes with mixed ingredients (such as pizzas or sandwiches) can have variety.
-                    
-                    At the moment, UK dietary guidelines rely on people using their own discretion to achieve an overall balance of different foods in their diet. But is it easy for consumers to identify variety?</p>
+                    But what’s defined as “variety” by dietary guidelines can often be confusing and too simplistic – and vastly different from what the general public may define as variety. Research has shown that in addition to having variety as part of the whole diet, we can measure variety within meals (for example, having multiple courses, or foods from different food groups on our plate) as well as across meals (such as having different foods for lunch each day).</p>
+                    <iframe width="430" height="315" src="https://www.youtube.com/embed/6GEyjhoiJ_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="430" height="315" src="https://www.youtube.com/embed/B-VivdiyL9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
             </div>
             <div class="right">
-                <h3> Get your Favourite foods</h3>
+             <h3><p> Get your Favourite foods</p></h3>
                 <div class="vwrap">
                     <div class="vmove">
-                        <div class="vitem">Yummy Foods at discount <button type="button">Buy Now!</button></div>
-                        <div class="vitem"><img src="kfc_PNG32.png" width="100px" height="100px">
+                        <div class="vitem"><p>Yummy Foods at discount <button type="button">Buy Now!</button></p></div>
+                        <div class="vitem">
                             <p>KFC – It’s finger lickin’ good. <a href="https://online.kfc.co.in/"><button type="button">Buy Now!</button></a></p></div>
-                        <div class="vitem"><img src="mcd.png" width="100px" height="100px">
+                        <div class="vitem">
                             <p>McDonald’s – I’m loving it <button type="button">Buy Now!</button></p></div>
-                        <div class="vitem">Subway – Eat fresh <button type="button">Buy Now!</button></div>
-                        <div class="vitem">Fridays – In here, It’s always Friday. <button type="button">Buy Now!</button></div>
-                        <div class="vitem"> Burger King – Be your way<button type="button">Buy Now!</button></div>
-                        <div class="vitem">Classic. Real. Japanese sushi. <button type="button">Buy Now!</button></div>
-                        <div class="vitem">A taste of Italy <button type="button">Buy Now!</button></div>
-                        <div class="vitem">Experience a taste of Mexico <button type="button">Buy Now!</button></div>
+                        <div class="vitem"><p>Subway – Eat fresh <button type="button">Buy Now!</button></p></div>
+                        <div class="vitem"><p>Fridays – In here, It’s always Friday. <button type="button">Buy Now!</button></p></div>
+                        <div class="vitem"><p> Burger King – Be your way<button type="button">Buy Now!</button></p></div>
+                        <div class="vitem"><p>Classic. Real. Japanese sushi. <button type="button">Buy Now!</button></p></div>
+                        <div class="vitem"><p>A taste of Italy <button type="button">Buy Now!</button></p></div>
+                        <div class="vitem"><p>Experience a taste of Mexico <button type="button">Buy Now!</button></p></div>
                     </div>
                 </div>
 
             </div>
         </div>
+        <div class="footer">
+            <h2>&copy; www.cuisineoverworld.com</h2>
+            <h3 class="ul_media">Contact</h3>
+            <ul style="text-align:left" class="ul_media">
+                <li style="list-style:none ;"">9591617518</li>
+                
+            </ul><br>
+                  
+        </div>
 
     </div>
+  
     
 </body>
 </html>
